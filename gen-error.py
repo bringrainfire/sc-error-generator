@@ -30,4 +30,4 @@ im1.show()
 
 
 #Uncomment Line Below to Save Result
-#my_image.save("errorPics/" + image_name + ".png")
+#im1.save("errorPics/" + image_name + ".png")
