@@ -9,15 +9,16 @@ font_size = 16
 main_font = ImageFont.truetype('Fonts/Orbitron/Orbitron-VariableFont_wght.ttf', font_size)
 
 #Error Text to render
-MainMessage =  "Offline until 4.0 release"
-ErrorCode = "0"
-Description = ""
+MainMessage =  "There will be no more updates until 4.0"
+ErrorCode = "30018"
+Description = "Thanks for playing!"
 
 #Draw Image
 image_editable = ImageDraw.Draw(my_image)
 
 #Render Text Onto Image
 image_editable.text((50,75), "Error: " + MainMessage + " (Code: " + ErrorCode + " ) ", (255,255,255), font=main_font)
+image_editable.text((50,100), Description, (255,255,255), font=main_font)
 
 #image settings
 image_name = "nameOfImage"
@@ -27,7 +28,5 @@ im1 = my_image.resize(newsize)
 #Uncomment line below to preview result
 im1.show()
 
-
-
 #Uncomment Line Below to Save Result
-#im1.save("errorPics/" + image_name + ".png")
+im1.save("errorPics/" + image_name + ".png")
