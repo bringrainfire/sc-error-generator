@@ -29,4 +29,4 @@ im1 = my_image.resize(newsize)
 im1.show()
 
 #Uncomment Line Below to Save Result
-im1.save("errorPics/" + image_name + ".png")
+#im1.save("errorPics/" + image_name + ".png")
